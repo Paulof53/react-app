@@ -1,9 +1,9 @@
 import React from "react";
-import {
+
+import { 
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
   } from "react-router-dom";
   import PagesPromotionSearch from "../Search";
   import PagesPromotionForm from "../form";
@@ -12,6 +12,7 @@ import {
         <Router>
             <Switch>
                  <Route path="/create" component={PagesPromotionForm} />
+                 <Route path="/edit/:id" component={PagesPromotionForm} />
                 <Route path="/" component={PagesPromotionSearch} />
                 
             </Switch>
